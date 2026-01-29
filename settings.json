@@ -1,0 +1,74 @@
+{
+    "breadcrumbs.enabled": false,
+
+    "chat.viewSessions.orientation": "stacked",
+
+    "editor.fontSize": 15,
+    "editor.fontFamily": "Noto Sans Mono",
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "off",
+    "editor.lineHeight": 1.5,
+    "editor.letterSpacing": 1.1,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmPasteNative": false,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        ".env": ".env*",
+        "settings.json": "emojis.json, emojis.dev.json",
+        "package.json": "*lock.json, *.lock, *lock.yaml, *.lockb, *config.json, *config.ts, .eslintrc.json, .gitignore, .discloudignore, biome.json, .nvmrc"
+    },
+
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "git.postCommitCommand": "sync",
+    "git.openRepositoryInParentFolders": "always",
+
+    "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": true
+    },
+    "github.copilot.chat.localeOverride": "pt-br",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        { "text": "All commits must be in English. Follow the style: emoji + type(scope): description." },
+        { "file": "./.github/commit-style-guide.md" }
+    ],
+
+    "javascript.updateImportsOnFileMove.enabled": "always",
+
+    "Lua.diagnostics.enable": false,
+
+    "security.workspace.trust.enabled": false,
+    
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.fontFamily": "CaskaydiaCove NFM",
+    "terminal.integrated.fontLigatures.enabled": true,
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+    "terminal.integrated.tabs.defaultIcon": "github",
+
+    "window.menuBarVisibility": "compact",
+    "window.confirmSaveUntitledWorkspace": false,
+
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.showTabs": "multiple",
+    "workbench.list.smoothScrolling": true,
+    "workbench.tree.enableStickyScroll": false,
+    "workbench.colorTheme": "escook Dark Soft"
+}
