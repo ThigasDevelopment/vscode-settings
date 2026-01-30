@@ -147,6 +147,7 @@ Isso mantém o explorer organizado agrupando arquivos relacionados.
 ```json
 "github.copilot.chat.commitMessageGeneration.instructions": [
     { "text": "All commits must be in English. Follow the style: emoji + type(scope): description." },
+    { "text": "Use these emojis for the respective types: feat = ✨, fix = 🐛, docs = 📚, style = 💎, refactor = ♻️, perf = ⚡, test = ✅, build = 📦, ci = 🎡, chore = ♻️, revert = ⏪" },
     { "file": "./.github/commit-style-guide.md" }
 ]
 ```
