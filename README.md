@@ -19,6 +19,7 @@ Minhas configurações personalizadas do Visual Studio Code para uma experiênci
 ## 🎯 Visão Geral
 
 Este repositório contém minhas configurações do VSCode focadas em:
+
 - ✨ Interface minimalista e limpa
 - 🚀 Produtividade maximizada
 - 💅 Experiência visual suave
@@ -60,23 +61,28 @@ Este repositório contém minhas configurações do VSCode focadas em:
 "editor.smoothScrolling": true
 "editor.cursorSmoothCaretAnimation": "on"
 "editor.tabSize": 4
+"editor.indentSize": "tabSize"
 "editor.insertSpaces": false
+"editor.detectIndentation": false
 ```
 
 - **Animações suaves**: Cursor e scroll com transições fluidas
 - **Tabulação**: 4 espaços usando tabs (não espaços)
+- **Detecção de indentação desabilitada**: Usa configuração fixa ao invés de detectar automaticamente
 
 ## 📁 Explorer
 
 ### Confirmações Desabilitadas
 
 ```json
+"explorer.autoReveal": false
 "explorer.confirmDelete": false
 "explorer.confirmDragAndDrop": false
 "explorer.confirmPasteNative": false
 ```
 
-Confirmações automáticas desabilitadas para agilizar o fluxo de trabalho.
+- **Auto Reveal**: Não revela automaticamente o arquivo aberto no explorer
+- Confirmações automáticas desabilitadas para agilizar o fluxo de trabalho.
 
 ### File Nesting
 
@@ -90,10 +96,10 @@ Confirmações automáticas desabilitadas para agilizar o fluxo de trabalho.
 - `.env` → agrupa todos os arquivos `.env*`
 - `settings.json` → agrupa `emojis.json`, `emojis.dev.json`
 - `package.json` → agrupa:
-  - Lock files: `*lock.json`, `*.lock`, `*lock.yaml`, `*.lockb`
-  - Configs: `*config.json`, `*config.ts`
-  - Linters: `.eslintrc.json`, `biome.json`
-  - Outros: `.gitignore`, `.discloudignore`, `.nvmrc`
+    - Lock files: `*lock.json`, `*.lock`, `*lock.yaml`, `*.lockb`
+    - Configs: `*config.json`, `*config.ts`
+    - Linters: `.eslintrc.json`, `biome.json`
+    - Outros: `.gitignore`, `.discloudignore`, `.nvmrc`
 
 Isso mantém o explorer organizado agrupando arquivos relacionados.
 
@@ -153,6 +159,7 @@ Isso mantém o explorer organizado agrupando arquivos relacionados.
 ```
 
 Mensagens de commit geradas seguem o padrão:
+
 - 🌟 Formato: `emoji + type(scope): description`
 - 🌐 Idioma: Inglês
 - 📝 Guia de estilo personalizado em `.github/commit-style-guide.md`
@@ -166,9 +173,12 @@ Mensagens de commit geradas seguem o padrão:
 # Commit Style Guide
 
 ## Format
+
 All commit messages must follow this format:
 ```
+
 emoji type(scope): description
+
 ```
 
 ## Types
@@ -299,7 +309,7 @@ Sessões de chat empilhadas verticalmente.
 ### JavaScript
 
 ```json
-"javascript.updateImportsOnFileMove.enabled": "always"
+"js/ts.updateImportsOnFileMove.enabled": "always"
 ```
 
 Atualiza imports automaticamente ao mover arquivos.
@@ -311,6 +321,22 @@ Atualiza imports automaticamente ao mover arquivos.
 ```
 
 Diagnósticos do Lua desabilitados.
+
+### Prettier
+
+```json
+"editor.formatOnSave": true
+"editor.defaultFormatter": "esbenp.prettier-vscode"
+"prettier.tabWidth": 4
+"prettier.useTabs": true
+"prettier.singleQuote": true
+```
+
+- **Format on Save**: Formata automaticamente ao salvar
+- **Formatador padrão**: Prettier configurado como formatador principal
+- **Tab Width**: 4 espaços
+- **Usar Tabs**: Usa tabs ao invés de espaços
+- **Single Quotes**: Aspas simples em strings
 
 ### Segurança
 
@@ -331,16 +357,19 @@ git clone https://github.com/seu-usuario/vscode-settings.git
 ### 2. Localizar as Configurações do VSCode
 
 **Windows:**
+
 ```
 %APPDATA%\Code\User\
 ```
 
 **macOS:**
+
 ```
 ~/Library/Application Support/Code/User/
 ```
 
 **Linux:**
+
 ```
 ~/.config/Code/User/
 ```
@@ -373,9 +402,10 @@ Reinicie o editor para aplicar as configurações.
 
 Para aproveitar todas as configurações, instale:
 
-- **Material Icon Theme**: Ícones do explorer
-- **escook Dark Soft** (ou tema similar): Tema de cores
-- **GitHub Copilot**: Assistente de código AI
+- **[Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)**: Ícones do explorer
+- **[escook Dark Soft](https://marketplace.visualstudio.com/items?itemName=escook.dark-soft)**: Tema de cores
+- **[GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)**: Assistente de código AI
+- **[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)**: Formatador de código
 - **Extensões de linguagem**: Conforme suas necessidades
 
 ## 📝 Notas
@@ -390,4 +420,4 @@ Configurações de código aberto - use e modifique como desejar!
 
 ---
 
-**Última atualização:** Janeiro 2026
+**Última atualização:** Março 2026
