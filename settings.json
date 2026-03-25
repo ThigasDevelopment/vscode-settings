@@ -31,6 +31,9 @@
 		"package.json": "*lock.json, *.lock, *lock.yaml, *.lockb, *config.json, *config.ts, .eslintrc.json, .gitignore, .discloudignore, biome.json, .nvmrc"
 	},
 
+	"files.insertFinalNewline": false,
+	"files.trimFinalNewlines": true,
+
 	"git.enableSmartCommit": true,
 	"git.confirmSync": false,
 	"git.autofetch": true,
