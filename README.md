@@ -420,4 +420,4 @@ Configurações de código aberto - use e modifique como desejar!
 
 ---
 
-**Última atualização:** Março 2026
+**Última atualização:** Abril 2026
